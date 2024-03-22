@@ -1,49 +1,34 @@
-import Image from "next/image"
+import Image from 'next/image';
 
-const Footer = () => {
+export default function Footer() {
     return (
-        <>
-            <footer className="bg-purple-progress py-20 text-white text-lg">
-                <div className="container mx-auto">
-                    <div className="sm:flex mb-4">
-                        <div className="sm:w-1/2 sm:mt-0 mt-8 h-auto">
-                            <Image src="/logo-footer.svg" alt="Logo" width={54} height={54} className="mb-3" />
-                            <p className="font-light">
-                            Helps people execute their <br />bright ideas
-                            </p>
-                        </div>
-                        <div className="sm:w-1/4 h-auto">
-                            <div class="mb-8 font-bold">Explore</div>
-                            <ul class="font-light">
-                                <li class="mb-3">Our Services</li>
-                                <li class="mb-3">Equity System</li>
-                                <li class="mb-3">Refund</li>
-                                <li class="mb-3">Shareholder</li>
-                            </ul>
-                        </div>
-                        <div className="sm:w-1/4 h-auto">
-                            <div class="mb-8 font-bold">Explore</div>
-                            <ul class="font-light">
-                            <li class="mb-3">My Account</li>
-                            <li class="mb-3">Top Startups</li>
-                            <li class="mb-3">How-to Tutorials</li>
-                            <li class="mb-3">Withdrawl</li>
-                            </ul>
-                        </div>
-                        <div className="sm:w-1/4 h-auto">
-                            <div class="mb-8 font-bold">Explore</div>
-                            <ul class="font-light">
-                                <li class="mb-3">+021 2208 1996</li>
-                                <li class="mb-3">KBP, Bandung</li>
-                                <li class="mb-3">No.12 (Backer)</li>
-                                <li class="mb-3">support@backer.id</li>
-                            </ul>
-                        </div>
+        <div className="bg-purple-progress py-10 md:py-20 text-white text-lg">
+            <div className="container mx-auto">
+                <div className="flex flex-col md:flex-row md:justify-between">
+                    <div className="md:flex-row md:w-1/2 md:mt-0 mt-4 h-auto bg-indigo-500">
+                        {/* <Image src="/logo-circle-engineering.png" alt="Logo" width={319} height={133} />
+                        <h3>Circle Engineering.</h3>
+                        <p className="font-light w-1/2">Menjadi perusahaan terpercaya dalam bidang pengadaan maupun perawatan sipil & elektrikal</p> */}
+                    </div>
+                    <div className="md:w-1/4 h-auto ml-5 bg-cyan-600">
+                        {/* <div className="mb-4 md:mb-8 font-bold">Layanan</div>
+                        <ul className="font-light">
+                            <li className="mb-3">Pembangunan / renovasi bangunan</li>
+                            <li className="mb-3">Perbaikan / pembuatan instalasi listrik</li>
+                            <li className="mb-3">Pengurusan pasang baru dan tambah daya</li>
+                        </ul> */}
+                    </div>
+                    <div className="md:w-1/4 h-auto ml-5 bg-teal-400">
+                        {/* <div className="mb-4 md:mb-8 font-bold">Office</div>
+                        <ul className="font-light">
+                            <li className="mb-3">+021 2208 1996</li>
+                            <li className="mb-3">Semarang</li>
+                            <li className="mb-3">No 12 / Habi Saputra</li>
+                            <li className="mb-3">support@circle.id</li>
+                        </ul> */}
                     </div>
                 </div>
-            </footer>
-        </>
+            </div>
+        </div>
     )
 }
-
-export default Footer

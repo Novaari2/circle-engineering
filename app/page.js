@@ -33,11 +33,10 @@ export default function Home() {
           <div className="container mx-auto">
             <div className="w-full text-center">
               <h1 className="text-5xl text-white font-semibold">
-              Easy way to funding
+              Percayakan kepada kami
               <br />
-              best idea and innovation
+              Untuk menangani masalah anda
               </h1>
-              <button className="inline-block bg-orange-button hover:bg-green-button text-white font-semibold px-6 py-4 mt-8 text-lg rounded-full">Getting Started</button>
             </div>
           </div>
         </section>
