@@ -31,7 +31,7 @@ const Hero = () => {
           </nav>
           <ul className="flex justify-center md:justify-end items-center mt-4 md:mt-0">
             <li>
-              <Link href="#" className="inline-block bg-orange-button border-white border hover:bg-opacity-25 text-white font-light text-lg rounded-full px-6 py-1">
+              <Link href="#" className="inline-block hidden md:block bg-orange-button border-white border hover:bg-opacity-25 text-white font-light text-lg rounded-full px-6 py-1">
                 Hubungi Kami
               </Link>
             </li>
@@ -50,7 +50,7 @@ const Hero = () => {
             </p>
           </div>
           <div className="w-full md:w-1/2 flex justify-center">
-            <Image src="/hero-image@2x.png" alt="Hero" width={500} height={500} className="h-full" />
+            <Image src="/hero.jpg" alt="Hero" width={250} height={100} className="rounded-lg hidden md:block" />
           </div>
         </div>
       </div>
