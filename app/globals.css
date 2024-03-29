@@ -46,13 +46,14 @@
     background-position: top right;
     background-repeat: no-repeat;
     /* background-color: #3b41e3; */
-    background-color: #3887BE;
+    background-color: #fff;
     transform: skewY(-6deg);
     transform-origin: top left;
   }
   
   .cta-clip {
     position: relative;
+    margin-top: 10px;
     top: 200px;
     bottom: 0;
     right: 0;

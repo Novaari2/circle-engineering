@@ -4,12 +4,13 @@ import Navbar from "./components/Navbar";
 import Portofolio from "./components/Portofolio";
 import Review from "./components/Review";
 import Visi from "./components/Visi";
+import Client from "./components/clients";
 
 export default function Home() {
   return (
     <div className="landing-page">
       {/* Hero */}
-      <section className="landing-hero pt-5">
+      <section className="landing-hero pt-5 mt-10">
           <Hero />
       </section>
 
@@ -25,6 +26,10 @@ export default function Home() {
 
       <section className="container mx-auto pt-24">
         <Review />
+      </section>
+
+      <section className="container mx-auto pt-24">
+        <Client />
       </section>
 
       {/* footer */}

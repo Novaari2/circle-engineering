@@ -10,12 +10,12 @@ const Portofolio = () => {
                 </h2>
                 <Link href="#" className="text-gray-900 hover:underline text-md font-medium">View All</Link>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                {Array.from({ length: 6 }).map((_, index) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                {Array.from({ length: 8 }).map((_, index) => (
                     <div key={index} className="card-project mx-auto my-4 p-5 border border-gray-500 rounded-lg">
                         <div className="item">
                             <figure className="item-image">
-                                <img src={`/panel${(index % 3) + 1}.jpg`} alt="Project" className="rounded-lg w-full h-80 object-cover" />
+                                <img src={`/panel${(index % 3) + 1}.jpg`} alt="Project" className="rounded-lg w-full h-40 object-cover" />
                             </figure>
                             <div className="item-meta">
                                 <h4 className="text-3xl font-medium text-gray-900 mt-5">
