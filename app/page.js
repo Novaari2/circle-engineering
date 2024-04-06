@@ -31,21 +31,6 @@ export default function Home() {
       <section className="container mx-auto pt-24">
         <Client />
       </section>
-
-      {/* footer */}
-      <div className="cta-clip -mt-20"></div>
-        <section className="call-to-action bg-purple-progress pt-64 pb-10">
-          <div className="container mx-auto">
-            <div className="w-full text-center">
-              <h1 className="text-5xl text-white font-semibold">
-              Percayakan kepada kami
-              <br />
-              Untuk menangani masalah anda
-              </h1>
-            </div>
-          </div>
-        </section>
-        <Footer />
     </div>
   );
 }

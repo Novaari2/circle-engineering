@@ -4,7 +4,7 @@ import Link from "next/link"
 const Hero = () => {
   return (
     <>
-      <div className="header__bg"></div>
+      {/* <div className="header__bg"></div> */}
       <div className="container mx-auto relative mt-10">
         {/* <header className="flex items-center flex-wrap justify-between">
           <div className="flex-shrink-0">
@@ -40,7 +40,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center pt-10 px-5 md:px-0">
           <div className="w-full md:w-1/2 text-center md:text-left mb-5 md:mb-0">
             <h1 className="text-4xl text-black mb-5">
-              Kami siap <u className="hero-underline">anda</u> <br />
+              Kami siap <br />
               mengatasi & <u className="hero-underline">masalah</u> <br />
               kelistrikan anda
             </h1>
