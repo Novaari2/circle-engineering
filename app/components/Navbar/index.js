@@ -1,32 +1,54 @@
+"use client"
+
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+
 const Navbar = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
     return (
-        <div className="navbar bg-teal-500">
-            <div className="navbar-start flex items-center">
-                <div className="dropdown lg:hidden">
-                    <div tabIndex={0} role="button" className="btn btn-ghost">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+        <nav className="bg-white fixed w-full z-10 top-0 start-0">
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+                    <div className="w-40 h-15">
+                        <Image src="/bg.png" alt="Circle Engineering Logo" className="w-full h-full bg-cover" width={200} height={100} />
                     </div>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 3</a></li>
+                </Link>
+                <div className="md:hidden">
+                    <button onClick={() => setMenuOpen(!menuOpen)} className="block text-gray-900 focus:outline-none">
+                        {menuOpen ? (
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        ) : (
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+                            </svg>
+                        )}
+                    </button>
+                </div>
+                <div className={`items-center justify-between w-full md:flex md:w-auto md:order-1 ${menuOpen ? 'block' : 'hidden'}`} id="navbar-sticky">
+                    <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+                        <li>
+                            <Link href="/" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0" aria-current="page">Home</Link>
+                        </li>
+                        <li>
+                            <Link href="/about" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">About</Link>
+                        </li>
+                        <li>
+                            <Link href="/product" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">
+                                Produk
+                            </Link>
+                        </li>
+                        <li>
+                            <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Contact</a>
+                        </li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl lg:hidden">daisyUI</a>
             </div>
-            <div className="navbar-center hidden lg:flex flex-grow justify-center">
-                <ul className="menu menu-horizontal">
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 3</a></li>
-                </ul>
-            </div>
-            <div className="navbar-end flex items-center justify-end">
-                <a className="btn hidden lg:flex mr-4">Hubungi Kami</a>
-                <a className="btn hidden lg:block">Button</a>
-            </div>
-        </div>
+        </nav>
     )
 }
 
-export default Navbar
+export default Navbar;
