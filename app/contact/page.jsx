@@ -13,7 +13,7 @@ const Contact = () => {
               <span clasname="w-[30px] h-[2px] bg-primary"></span>
               Say Hello 👋
             </div>
-            <h1 clasname="h1 max-w-md mb-8">Let's Work Together</h1>
+            <h1 clasname="h1 max-w-md mb-8">Let&apos;s Work Together</h1>
             <p clasname="subtitle max-w-[400px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis delectus modi rem debitis.</p>
           </div>
           {/* ilustration */}
