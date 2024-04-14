@@ -10,12 +10,12 @@ const Form = () => {
     <form className="flex flex-col gap-y-4">
         {/* input */}
         <div className="relative flex items-center">
-            <Input type='name' id='name' placeholder="Name" />
+            <Input type="name" id="name" placeholder="Name" />
             <User className="absolute right-6" size={20} />
         </div>
         {/* input */}
         <div className="relative flex items-center">
-            <Input type='name' id='name' placeholder="Name" />
+            <Input type="name" id="name" placeholder="Name" />
             <MailIcon className="absolute right-6" size={20} />
         </div>
         {/* input */}
@@ -23,7 +23,7 @@ const Form = () => {
             <Textarea placeholder="Type Your Message Here" />
             <MessageSquare className="absolute top-4 right-6" size={20} />
         </div>
-        <Button className='flex items-center gap-x-1 max-w-[166px]'>Let's Talk
+        <Button className="flex items-center gap-x-1 max-w-[166px]">Let's Talk
             <ArrowRightIcon size={20} />
         </Button>
     </form>

@@ -51,7 +51,7 @@ console.log(projectData.map((item) => item.category))
 const uniqueCategories = ['semua produk', ...new Set(projectData.map((item) => item.category))];
 console.log(uniqueCategories);
 
-const page = () => {
+const Page = () => {
   const [catgories, setCategories] = useState(uniqueCategories);
   const [category, setCategory] = useState('semua produk');
 
@@ -89,4 +89,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page;

@@ -17,7 +17,7 @@ import ProjectCard from './ProjectCard';
 const projectData = [
     {
         image: '/product/panel2.jpg',
-        category: 'react js',
+        category: 'panel',
         name: 'Panel Ats',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, assumenda? Qui, provident perspiciatis! Enim, soluta?',
         link: '/',
@@ -25,7 +25,7 @@ const projectData = [
     },
     {
         image: '/product/panel-pompa.jpeg',
-        category: 'next js',
+        category: 'panel',
         name: 'Panel Pompa',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, assumenda? Qui, provident perspiciatis! Enim, soluta?',
         link: '/',
@@ -33,7 +33,7 @@ const projectData = [
     },
     {
         image: '/product/smart-home.jpeg',
-        category: 'next js',
+        category: 'smart home',
         name: 'Smart Home',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, assumenda? Qui, provident perspiciatis! Enim, soluta?',
         link: '/',
@@ -41,7 +41,7 @@ const projectData = [
     },
     {
         image: '/product/penangkal.jpeg',
-        category: 'next js',
+        category: 'penangkal petir',
         name: 'Penangkal Petir Elektro Statis',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, assumenda? Qui, provident perspiciatis! Enim, soluta?',
         link: '/',
@@ -49,13 +49,13 @@ const projectData = [
     },
     {
         image: '/product/panel.jpeg',
-        category: 'next js',
+        category: 'panel',
         name: 'Panel LVMDP & SDP',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, assumenda? Qui, provident perspiciatis! Enim, soluta?',
         link: '/',
         github: '/',
     }
-];
+  ];
 
 const Work = () => {
   return (
