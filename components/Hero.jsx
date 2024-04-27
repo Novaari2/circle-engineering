@@ -27,22 +27,15 @@ const Hero = () => {
                     {/* buttons */}
                     <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
                         <Link href='/contact'>
-                            <Button className="gap-x-2">Contact Me <Send size={18} /></Button>
+                            <Button className="gap-x-2">Hubungi Kami <Send size={18} /></Button>
                         </Link>
                         {/* <Button variant='secondary' className="gap-x-2">Download CV <Download size={18} /></Button> */}
                     </div>
                     {/* Socials */}
-                    <Socials containerStyles='flex gap-x-6 mx-auto xl:mx-0' iconStyles='text-foreground text-[22px] hover:text-primary transition-all' />
+                    {/* <Socials containerStyles='flex gap-x-6 mx-auto xl:mx-0' iconStyles='text-foreground text-[22px] hover:text-primary transition-all' /> */}
                 </div>
                 {/* image */}
-                <div className="hidden xl:flex relative">
-                    {/* badge 1 */}
-                    {/* <Badge containerStyles='absolute top-[24%] -left-[5rem]' icon={<RiBriefcase4Fill />} endCountNum={3} badgeText='Years Of Experience' /> */}
-                    {/* badge 2 */}
-                    {/* <Badge containerStyles='absolute top-[80%] -left-[1rem]' icon={<RiTodoFill />} endCountNum={6} endCounttext='k' badgeText='Finished Project' /> */}
-                    {/* badge 3 */}
-                    {/* <Badge containerStyles='absolute top-[55%] -right-8' icon={<RiTeamFill />} endCountNum={9} endCounttext='k' badgeText='Happy Client' /> */}
-                    {/* <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div> */}
+                <div className="hidden xl:flex relative content-center">
                     <DevImg containerStyles="bg-hero_shape w-[310px] h-[462px] bg-no-repeat relative bg-bottom right-20" imgSrc='/hero/hero.jpg' />
                 </div>
             </div>
