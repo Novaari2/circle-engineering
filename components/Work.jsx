@@ -13,49 +13,7 @@ import { Pagination } from 'swiper/modules';
 
 //components
 import ProjectCard from './ProjectCard';
-
-const projectData = [
-    {
-        image: '/product/panel2.jpg',
-        category: 'panel',
-        name: 'Panel Ats',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, assumenda? Qui, provident perspiciatis! Enim, soluta?',
-        link: '/',
-        github: '/',
-    },
-    {
-        image: '/product/panel-pompa.jpeg',
-        category: 'panel',
-        name: 'Panel Pompa',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, assumenda? Qui, provident perspiciatis! Enim, soluta?',
-        link: '/',
-        github: '/',
-    },
-    {
-        image: '/product/smart-home.jpeg',
-        category: 'smart home',
-        name: 'Smart Home',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, assumenda? Qui, provident perspiciatis! Enim, soluta?',
-        link: '/',
-        github: '/',
-    },
-    {
-        image: '/product/penangkal.jpeg',
-        category: 'penangkal petir',
-        name: 'Penangkal Petir Elektro Statis',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, assumenda? Qui, provident perspiciatis! Enim, soluta?',
-        link: '/',
-        github: '/',
-    },
-    {
-        image: '/product/panel.jpeg',
-        category: 'panel',
-        name: 'Panel LVMDP & SDP',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, assumenda? Qui, provident perspiciatis! Enim, soluta?',
-        link: '/',
-        github: '/',
-    }
-  ];
+import projectData from "../lib/data";
 
 const Work = () => {
   return (
