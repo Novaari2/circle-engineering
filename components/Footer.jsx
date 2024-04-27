@@ -19,8 +19,7 @@ const Footer = () => {
         <div className="text-center md:text-left">
           <h3 className="text-white mb-4">Kontak</h3>
           <ul className="text-muted-foreground">
-            <li>Alamat: Jalan Contoh No. 123, Kota Contoh</li>
-            <li>Telepon: (123) 456-7890</li>
+            <li>Telepon: +62 888-0390-5669</li>
             <li>Email: info@circleengineering.com</li>
           </ul>
         </div>
