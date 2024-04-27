@@ -1,6 +1,6 @@
 import DevImg from "./DevImg";
 import Image from "next/image";
-import {Tabs, TabsList, TabsTrigger, TabsContent} from '@/components/ui/tabs';
+import {Tabs, TabsList, TabsTrigger, TabsContent} from './ui/tabs';
 import {
     User2,
     MailIcon,
