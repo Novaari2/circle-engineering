@@ -1,24 +1,24 @@
-import {GanttChartSquare, Blocks, Gem} from 'lucide-react';
+import {Wrench, Settings, ClipboardPlus, Lightbulb} from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 
 const servicesData = [
     {
-        icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
+        icon: <ClipboardPlus size={72} strokeWidth={0.8} />,
         title: 'Pemasangan Instalasi Listrik Baru',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nobis distinctio officia dolorem aspernatur esse! Nemo distinctio ut saepe totam.'
     },
     {
-        icon: <Blocks size={72} strokeWidth={0.8} />,
+        icon: <Lightbulb size={72} strokeWidth={0.8} />,
         title: 'Pengurusan Pasang Baru & Tambah Daya Listrik',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, voluptatibus?.'
     },
     {
-        icon: <Gem size={72} strokeWidth={0.8} />,
+        icon: <Settings size={72} strokeWidth={0.8} />,
         title: 'Perbaikan Instalasi Listrik',
         description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quasi quos recusandae ducimus eligendi unde!.'
     },
     {
-        icon: <Gem size={72} strokeWidth={0.8} />,
+        icon: <Wrench size={72} strokeWidth={0.8} />,
         title: 'Inspeksi & Perawatan Instalasi Listrik',
         description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quasi quos recusandae ducimus eligendi unde!.'
     },
@@ -39,7 +39,7 @@ const Services = () => {
                         </CardHeader>
                         <CardContent className='text-center'>
                             <CardTitle className='mb-4'>{item.title}</CardTitle>
-                            <CardDescription className='text-lg'>{item.description}</CardDescription>
+                            {/* <CardDescription className='text-lg'>{item.description}</CardDescription> */}
                         </CardContent>
                     </Card>
                     );

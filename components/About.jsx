@@ -150,7 +150,7 @@ const About = () => {
                             <TabsContent value="personal">
                                 <div className="text-center xl:text-left">
                                     <h3 className="h3 mb-4">Kami merupakan penyedia jasa permasalahan elektrik</h3>
-                                    <p className="subtitle max-w-xl max-auto xl:mx-0">Circle Engineering adalah perusahaan yang bergerak di bidang mekanikal dan electrical di bidang lingkungan, transmisi, distribusi dan swasta. Didirikan pada 4 juli 2020 di Semarang dan bekerja sama dengan perusahaan dan instansi terbaik di Indonesia.</p>
+                                    <p className="text-slate-500 mb-5 max-w-xl max-auto xl:mx-0">Circle Engineering adalah perusahaan yang bergerak di bidang mekanikal dan electrical di bidang lingkungan, transmisi, distribusi dan swasta. Didirikan pada 4 juli 2020 di Semarang dan bekerja sama dengan perusahaan dan instansi terbaik di Indonesia.</p>
                                     {/* icons */}
                                     <div className="grid xl:grid-cols-2 gap-4 mb-12">
                                         {infoData.map((item, index) => {
@@ -192,7 +192,7 @@ const About = () => {
                                                                 <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
                                                             </div>
                                                             <div>
-                                                                <div className="font-semibold text-xl leading-none mb-2">{company}</div>
+                                                                <div className="text-xl leading-none mb-2">{company}</div>
                                                                 {/* <div className="text-lg leading-none text-muted-foreground mb-4">{role}</div>
                                                                 <div className="text-base font-medium">{years}</div> */}
                                                             </div>
@@ -219,7 +219,7 @@ const About = () => {
                                                                 <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
                                                             </div>
                                                             <div>
-                                                                <div className="font-semibold text-xl leading-none mb-2">{university}</div>
+                                                                <div className="text-xl leading-none mb-2">{university}</div>
                                                                 {/* <div className="text-lg leading-none text-muted-foreground mb-4">{qualification}</div> */}
                                                                 {/* <div className="text-base font-medium">{years}</div> */}
                                                             </div>
