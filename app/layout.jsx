@@ -8,7 +8,7 @@ const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Circle Engineering",
-  description: "Jasa Elektrik Semarang",
+  description: "Jasa Perbaikan Dan Instalasi Listrik Semarang",
 };
 
 export default function RootLayout({ children }) {
