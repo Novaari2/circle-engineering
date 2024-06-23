@@ -25,15 +25,15 @@ const Hero = () => {
                         Pilih teknisi yang tepat untuk menyelesaikan permasalahan elektrikal anda
                     </p>
                     {/* buttons */}
-                    <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
-                        <Link href='/contact'>
+                    {/* <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
+                        <Link href=''>
                             <Button className="gap-x-2">Hubungi Kami <Send size={18} /></Button>
-                        </Link>
+                        </Link> */}
                         {/* <Button variant='secondary' className="gap-x-2">Download CV <Download size={18} /></Button> */}
                     </div>
                     {/* Socials */}
                     {/* <Socials containerStyles='flex gap-x-6 mx-auto xl:mx-0' iconStyles='text-foreground text-[22px] hover:text-primary transition-all' /> */}
-                </div>
+                {/* </div> */}
                 {/* image */}
                 <div className="hidden xl:flex relative content-center">
                     <DevImg containerStyles="bg-hero_shape w-[310px] h-[462px] bg-no-repeat relative bg-bottom right-20" imgSrc='/hero/hero.jpg' />

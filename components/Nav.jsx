@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const links = [
   {path: '/', name: 'home'},
   {path: '/projects', name: 'produk'},
-  {path: '/contact', name: 'contact'},
+  // {path: '/contact', name: 'contact'},
 ]
 const Nav = ({containerStyles, linkStyles, underlineStyles}) => {
   const path = usePathname();
